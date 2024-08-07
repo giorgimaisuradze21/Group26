@@ -1,17 +1,32 @@
-# def manual_len(listnn1):
-#     summ1=0
-#     for i in listnn1:
-#         if i > summ1:
-#          summ1=i
-#     return summ1
-# print(manual_len([1,2,3,4,5]))     
+# 1) შექმენით ფუნქცია რომელიც გამოიტანს რიცხვების საშუალო არითმეტიკულს 
+# Listt=[1,2,3,35,51,95]
+# def average(List_numbers):
+#     sum=0
+#     for i in List_numbers:
+#       sum+=i
+#     print(sum / len(Listt))  
+# average(Listt)
 
 
 
-def manual_min(listnn1):
-   summ1=listnn1[1]
-   for i in listnn1:
-       if i > summ1:
-         summ1=i
-         return summ1       
-print(manual_min([90,30,21]))   
+# შექმენით manual_abs() ფუნქცია. (ვისაც არ გახსოვთ abs რა არის დაგუგლეთ)
+
+# def manual_abs(num):
+#     if num == 0:
+#         return 0
+#     elif num < 0:
+#         return -(num)
+#     else:
+#         return(num)
+
+
+# შექმენით ფუნქცია რომელიც გამოიტანს მიცემულ ლისტს დუპლიკატების გარეშე
+# e.g: input: [1, 2, 3, 1]; output: [1, 2, 3]
+
+def remove_same_element(listnnn1):
+    new_listnn = []
+    for i in listnnn1:
+        if i not in new_listnn:
+            new_listnn.append(i)
+    return new_listnn
+print(remove_same_element([10, 7, 8, 7, 6, 5]))
